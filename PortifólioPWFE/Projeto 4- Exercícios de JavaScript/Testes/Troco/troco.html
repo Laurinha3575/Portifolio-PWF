@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação Js</title>
+    <style>
+        body{ font:12pt Arial;}
+        button{font-size: 12pt; padding: 30px;}        
+    </style>
+     </head>
+     <body>
+         <h1>Calculando troco!</h1>
+         <button onclick="troco()">Troco</button>
+         <script>
+             function troco() {
+                var produto = window.prompt("Informe o produto comprado: ")
+                var valor=Number(window.prompt(`Informe o preço do produto ${produto}`))
+                var vltotal=Number(window.prompt(`Informe o valor total que irá pagar: `))
+                if(vltotal>=valor){
+                    var troco= vltotal-valor
+                    window.alert(`O seu troco é de R$ ${troco}`)
+                }else{
+                    
+                }
+
+             }
+         </script>
+     </body>
+ </html>

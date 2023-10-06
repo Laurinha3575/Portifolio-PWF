@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação Js</title>
+    <style>
+        body{ font:12pt Arial;}
+        button{font-size: 12pt; padding: 30px;}        
+    </style>
+    </head>
+    <body>
+        <h1>Antes e depois</h1>
+        <button onclick="clicou()">Antecessor e Sucessor</button>
+        <script>
+            var n1 = Number(window.prompt("Digite um número: "))
+            window.alert("O SUCESSOR deste número é " + Number(n1+1))
+            window.alert("O ANTECESSOR deste número é " + Number(n1-1))
+        </script>
+    </body>
+</html>

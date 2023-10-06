@@ -1,0 +1,118 @@
+/* DOCUMENRO CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    text-align: center;
+    color: black;
+}
+
+h4{
+    text-align: right;
+}
+
+a{
+    width: 100%;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 700px;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: #a1a1a1;
+    border-radius: 1em;
+}
+
+.menu {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.option {
+    margin: 2% 3%;
+    width: 40%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: large;
+}
+
+.azul{
+    background-color: #3095d7;
+    color: white;
+}
+.azul:hover {
+    background-color: #3095d7;
+}
+
+.vermelho{
+    background-color: #c02202;
+    color: white;
+}
+.vermelho:hover{
+    background-color: #c02202;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 1% auto;
+}
+
+.form-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.form-column {
+    margin: 0% 2%;
+    flex:1;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .form-row{
+        flex-direction: column;
+    }
+    .container{
+        margin: 5% 2%;
+    }
+    .option{
+        min-width: max-content;
+        font-size: small;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu que muda ícone</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+            background-color: rgb(141, 208, 208);
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+        header .logo img{
+            margin-right: 3em;
+        }
+        header nav li{
+            display: inline;
+            margin-right: 3em;
+        }
+        header nav li a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+    <script>
+     function mudaFoto(item){
+    document.getElementById("icone").src=item
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img Tm/logo.png" id="icone" >
+            <h1>Tech Master</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#" onmousemove="mudaFoto('img Tm/computador.png')" onmouseout="mudaFoto('img Tm/logo.png')">Computadores</a></li>
+                <li><a href="#" onmousemove="mudaFoto('img Tm/videogame.png')" onmouseout="mudaFoto('img Tm/logo.png')">Video Games</a></li>
+                <li><a href="#" onmousemove="mudaFoto('img Tm/celular.png')" onmouseout="mudaFoto('img Tm/logo.png')">Celulares</a></li>
+                <li><a href="#" onmousemove="mudaFoto('img Tm/telefone.png')" onmouseout="mudaFoto('img Tm/logo.png')">Contato</a></li>
+                <li><a href="#" onmousemove="mudaFoto('img Tm/quemsomos.png')" onmouseout="mudaFoto('img Tm/logo.png')">Quem somos</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

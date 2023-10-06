@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pegando data</title>
+</head>
+<body>
+    <p>Informe a data do seu nascimento: </p>
+    <input type="date" name="" id="dataNasc">
+    <button onclick="calculadata()">Calcular</button>
+    <p id="res"></p>
+    <script>
+        function calculadata(){
+            dataAtual = new Date()
+            dataNasc = new Date(document.getElementById("dataNasc").value)
+            idade = dataAtual.getFullYear() - dataNasc.getFullYear()
+            document.getElementById("res").innerHTML = `<p>O ano atual é ${dataAtul.getFullYear()}<p/><p>A sua idade é ${idade} anos</p>`
+        }
+    </script>
+</body>
+</html>

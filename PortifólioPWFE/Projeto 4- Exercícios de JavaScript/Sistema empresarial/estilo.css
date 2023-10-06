@@ -1,0 +1,92 @@
+body {
+    background-color: grey;
+    color: white;
+    font: 16pt Arial;
+    text-align: center;
+}
+
+.box {
+    width: 80%;
+    height: 80%;
+    margin: 50px auto;
+    border: 2px black solid;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #000;
+    text-align: center;
+}
+
+.header {
+    width: 70%;
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header img {
+    width: 20%;
+    height: auto;
+}
+
+.header .linha {
+    width: auto;
+}
+
+.main {
+    display: flex;
+    width: 95%;
+}
+
+.form {
+    width: 60%;
+    padding-top: 3%;
+}
+
+.resultado {
+    width: 40%;
+    margin: 1em auto;
+    padding: 1%;
+    color: rgb(93, 158, 9);
+    border: 2px black solid;
+    background-color: #ddd;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #000;
+}
+
+.main .form a {
+    width: 100%;
+}
+
+input {
+    height: 30px;
+    width: 80%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #000;
+}
+
+input[type="submit"] {
+    margin: 2%;
+    height: 50px;
+    box-shadow: 5px 5px 5px #000;
+}
+
+button{
+    box-shadow: 5px 5px 5px #000;
+}
+
+input[type="submit"]:hover {
+    background-color: hwb(226 29% 16%);
+}
+
+#res {
+    font-size: normal;
+    text-align: justify;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px 4px;
+}

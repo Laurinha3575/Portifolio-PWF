@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 1</title>
+    <link rel="stylesheet" href="../estilo.css">
+</head>
+
+<body>
+    <div class="box">
+
+        <div class="header">
+            <img src="../img/hora-extra.png" alt="">
+            <h1>Calculadora de horas extras</h1>
+        </div>
+        <div class="main">
+            <div class="form">
+                <label for="salario">Valor do salário mensal bruto :</label>
+                <input type="number" name="n1" id="salario">
+                <br>
+                <label for="quant_hr_normais">Quantidade de horas extras - dias normais (úteis):</label>
+                <input type="number" name="n2" id="quant_hr_normais">
+                <br>
+                <label for="quant_hr_fds">Quantidade de horas extras - finais de semana:</label>
+                <input type="number" name="n2" id="quant_hr_fds">
+                <br>
+                <button onclick="calcular()">Calcular</button>
+                <a href="../index.html"><button>Voltar</button></a>
+                <br>
+            </div>
+            <div class="resultado">
+                <label for="res">Resultado:</label>
+                <p id="res"> </p>
+            </div>
+        </div>
+        <p id="data"></p>
+    </div>
+    <script src="codigo.js"> </script>
+    <script src="..\hora.js"> </script>
+</body>
+
+</html>

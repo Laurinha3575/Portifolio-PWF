@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/jogo.ico">
+    <title>JOGO DOS NÚMEROS</title>
+</head>
+<body>
+    <div class="box">
+        <img src="img/jogo.png"> <h1>| JOGO DOS NÚMEROS |</h1>
+        <section class="regras">
+        <p><strong>REGRAS BÁSICAS: </strong><br>• Insira apenas <em>números</em><br> • Insira apenas números <em>inteiros</em><br> • O número secreto está entre e <em>0 (ZERO) e 100 (CEM)</em>, portanto insira apenas números de 0 a 100.</p>
+    </section>
+        <div class="linha">
+            <div class="form">
+                <label for="number_user">Insira o número de escolha (de zero a cem):</label>
+                <br>
+                <input type="number" name="number_user" id="number_user"><br>
+                <button onclick="sortear()">JOGAR</button>
+                <button onclick="limpar()">DE NOVO</button>
+                <a href="homepage_jogo.html"><button>SAIR</button></a>
+            </div>
+            <div class="result">
+                <p id="result">O número correto aparecerá aqui...</p>
+                <section class="horas">
+                    <p id="horario"></p>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="funcoes.js"></script>
+</body>
+</html>

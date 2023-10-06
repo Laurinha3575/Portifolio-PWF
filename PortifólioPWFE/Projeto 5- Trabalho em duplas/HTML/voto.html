@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/voto.ico">
+    <title>IDADE ELEITORAL</title>
+</head>
+<body>
+    <div class="box">
+    <img src="img/voto.png"><h1>| IDADE ELEITORAL |</h1>
+        <div class="linha">
+            <div class="form">
+                <Label for="data_nasc">Informe o ano de seu nascimento: </Label>
+                <input type="text" name="data_nasc" id="data_nasc" maxlength="4">
+                <br><button class="botao azul" onclick="calculo_voto()" class="Calculo_imc">CALCULAR</button></a>
+                <button onclick="limpar3()">DE NOVO</button>
+                <a href="homepage_voto.html"><button>SAIR</button></a>
+            </div>
+            <div class="result">
+                <!-- Resultado do calculo -->
+                <!--label for="res">Resultado</label>
+                <input type="number" name="res" id="res" disabled-->
+                <p id="res">Sua resposta aparecerá aqui...</p>
+                <section class="horas">
+                    <p id="horario"></p>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="funcoes.js"></script>
+        
+    
+</body>
+</html>

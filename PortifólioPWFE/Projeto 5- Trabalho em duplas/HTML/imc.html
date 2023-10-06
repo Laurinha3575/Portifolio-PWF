@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/imc.ico">
+    <title>CÁLCULO DE IMC</title>
+</head>
+<body>
+    <div class="box">
+    <!-- Imagem de introdução (questão estética) -->
+    <img src="img/imc.png"><h1>| CÁLCULO DE IMC |</h1>
+    <section class="regras">
+        <p>Lembre-se de colocar os números com "." (ponto) ao invés de "," (vírugula)</p>
+    </section>
+        <div class="linha">
+            <div class="form">
+                <!-- texto de pergunta -->
+                <label for="altura">Informe a sua altura: </label>
+                <!-- caixa de resposta -->
+                <input type="number" name="altura" id="altura">
+                <br>
+                <label for="peso">Informe o seu peso: </label>
+                <input type="number" name="peso" id="peso">
+                <!-- botão para o calculo de IMC, o uso do onclick fara com que ao clicar
+                a função presente no script se realize -->
+                <button class="botao azul" onclick="calculo_imc()" class="Calculo_imc">CALCULAR</button></a>
+                <button onclick="limpar2()">DE NOVO</button>
+                <a href="homepage_imc.html"><button>SAIR</button></a>
+            </div>
+            <div class="result">
+                <!-- Resulado do calculo -->
+                 <!--label for="res">Resultado</label>
+                <input type="number" name="res" id="res" disabled-->
+                <p id="res">O resultado aparecerá aqui...</p>
+
+                <section class="horas">
+                    <p id="horario"></p>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- Link com o java script, realizado em outra página, você pode fazer o script no próprio HTML, no entanto eu não recomendo,
+    pois ficará desorganizado -->
+    <script src="funcoes.js"></script>
+    
+</body>
+</html>
+
